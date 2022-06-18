@@ -1,0 +1,64 @@
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$backgroud-color-title:pink;
+
+.home_section {
+    margin-top: 1.5rem;
+
+    .home_section__container {
+        background-color: $white;
+
+        // border-radius: 10px;
+        &>span {
+            background-color: $backgroud-color-title;
+            display: flex;
+            gap: 1.5rem;
+            padding: 5px;
+            align-items: center;
+        }
+
+        &_listItem {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3%;
+            .item {
+                width: calc(100% / 5 - 2px - 0.3%);
+                border-left: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+
+                img {
+                    display: block;
+                    margin: auto;
+                }
+              
+                b {
+                    font-size: 12px;
+                    color: $black;
+                }
+
+                .price {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                strong {
+                    color: #bf081f;
+                }
+
+                s {
+                    color: $black;
+                }
+
+                i {
+                    color: #dc143c;
+                }
+            }
+        }
+    }
+}
+

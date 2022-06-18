@@ -1,0 +1,50 @@
+.account {
+    display: flex;
+
+    &__list {
+        width: 20%;
+    }
+
+    &__information {
+        width: 70%;
+        background-color: #fff;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #efefef;
+            padding: 22px 0;
+            height: 80px;
+            justify-content: space-between;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            button {
+                height: 40px;
+                padding: 0 20px;
+                font-size: 14px;
+                text-transform: capitalize;
+                font-weight: 400;
+            }
+        }
+
+        &_sample {
+            padding: 1rem;
+            border-bottom: 1px solid #efefef;
+            button {
+                padding: .25rem;
+            }
+            .address{
+                display: flex;
+                justify-content: space-between;
+                div{
+                    button{
+                        padding-left: 1.5rem;
+                        padding-right: 1.5rem;
+                        background-color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

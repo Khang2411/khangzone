@@ -1,0 +1,30 @@
+.section_banner {
+    margin-top: 1rem;
+    .main_banner {
+        display: flex;
+        gap:0.5rem;
+    }
+    .carousel_banner {
+        width: 61%;  
+    }
+    .right_banner{
+        width: 38.5%;
+        & img{
+            width:670px;
+        }
+        & img:nth-child(2){
+            margin-top: 0.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .section_banner {
+        .carousel_banner {
+            width: 100%;  
+        }
+        .right_banner{
+           display: none;
+        }
+    }
+}

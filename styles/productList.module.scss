@@ -1,0 +1,34 @@
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3%;
+    .container_item {
+        width: calc(100% / 4 - 2px - 0.3%);
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        img {
+            display: block;
+            margin: auto;
+        }
+        b {
+            font-size: 12px;
+            color: $black;
+        }
+        .price {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        strong {
+            color: #bf081f;
+        }
+        s {
+            color: $black;
+        }
+        i {
+            color: #dc143c;
+        }
+    }
+}

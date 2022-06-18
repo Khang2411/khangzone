@@ -1,0 +1,65 @@
+.category {
+    .category__container {
+        display: flex;
+        flex-flow: wrap;
+        gap: 1rem;
+
+        &_filter {
+            width: 24%;
+        }
+
+        &_items {
+            width: calc(100% - 24% - 1rem);
+            background-color: #fff;
+            border-radius: 10px;
+
+            .sort {
+                ul {
+                    display: inline-flex;
+                    list-style: none;
+
+                    li {
+                        border: 1px solid black;
+                        border-radius: 5px;
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            .item {
+                display: flex;
+                flex-flow: wrap;
+                gap: 1rem;
+                justify-content: space-between;
+
+                &>div {
+                    width: calc(25% - 1rem);
+
+                    img {
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Của Filter component
+.filter_container {
+    font-size: 14px;
+
+    .filter_container__block {
+        display: flex;
+        flex-flow: wrap;
+        row-gap: 0.5rem;
+
+        &>h5:nth-child(1) {
+            width: 100%;
+        }
+
+        &>label {
+            width: 50%;
+        }
+    }
+}

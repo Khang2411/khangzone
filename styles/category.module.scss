@@ -1,0 +1,27 @@
+.section_cate {
+    margin-top: 2rem;
+    .section_cate__container {
+        background-color: #fff;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns:repeat(5,20%);
+    }
+    .section_cate__item {
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 15px;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 30px rgb(241, 241, 241)
+        }
+        & img {
+            width: 50%;
+            display: block;
+            margin: auto;
+            padding: auto;
+        }
+    }
+    .cate_item_name {
+        text-align: center;
+    }
+}

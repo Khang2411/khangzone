@@ -1,0 +1,27 @@
+.vertion{
+    img{
+        display: block;
+        margin: auto;
+    }
+    .price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    strong {
+        color: #bf081f;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    s {
+        color: rgb(0, 0, 0);
+    }
+
+    i {
+        color: #dc143c;
+    }
+}
+}

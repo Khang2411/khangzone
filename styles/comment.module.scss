@@ -1,0 +1,175 @@
+.comment {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 10px 12px;
+
+
+    &__container {
+        width: 60%;
+
+        &_filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+
+            div {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 6px 12px;
+                border-radius: 100px;
+                color: rgb(56, 56, 61);
+                background: rgb(245, 245, 250);
+                margin-bottom: 1rem;
+                cursor: pointer;
+                user-select: none;
+                text-align: center;
+
+                span {
+                    margin: auto;
+                }
+            }
+
+            div:nth-child(n+2) {
+                // Từ div 2 trở đi
+                width: 13%;
+            }
+
+
+
+            .active {
+                background: rgb(240, 248, 255) !important;
+                border: 1px solid rgb(26, 148, 255) !important;
+
+                svg {
+                    display: inline-block !important;
+
+
+                }
+            }
+
+        }
+
+        .commentArea {
+            border-top: 1px solid #dadada;
+            padding: 10px 12px;
+
+            &__userName {}
+
+
+            &__content {}
+
+            &__userReply {}
+
+            &__adminReply {
+                background-color: #f8f8f8;
+                margin-left: 1.5rem;
+                border: 1px solid #dadada;
+                border-radius: 10px;
+                padding: 10px 12px;
+                margin-bottom: 1rem;
+            }
+
+            &__mood {
+                display: flex;
+                gap: 1rem;
+
+                &_like {
+                    margin-bottom: 1rem;
+
+                    span {
+                        padding: 8px 16px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: rgb(11, 116, 229);
+                        font-weight: 500;
+
+                        border: 1px solid rgb(11, 116, 229);
+                        border-radius: 4px;
+                        margin: 0px 24px 0px px 0px;
+
+                        display: inline-block;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+                }
+
+                &_unlike {
+                    span {
+                        padding: 8px 16px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: rgb(11, 116, 229);
+                        font-weight: 500;
+
+                        border: 1px solid rgb(11, 116, 229);
+                        border-radius: 4px;
+                        margin: 0px 24px 0px px 0px;
+
+                        display: inline-block;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+.input_image {
+    display: inline-flex;
+    margin-top: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid rgba(25, 118, 210, 0.5);
+    color: rgb(25, 118, 210);
+}
+
+.multiPreview {
+    div{
+          position: relative;
+    }
+  
+    svg {
+        position: absolute;
+        left: 78px;
+        top: 0;
+        border-radius: 10px;
+        background-color: #dadada;
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .comment__container {
+        width: 100%;
+    }
+}

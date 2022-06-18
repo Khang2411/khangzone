@@ -1,0 +1,67 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  background-color: #f8f9fa !important;
+}
+
+main {
+  max-width: 1270px;
+  margin: 80px auto 0;
+  margin-top: 20px;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+a:hover {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+li {
+  list-style: none;
+}
+
+div[id*="tippy-"] {
+  width: 100% !important;
+  color: #232f3e;
+  border-radius: 8px;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: visible !important;
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+  display: block;
+  inset: 1px auto auto 0px !important;
+  transform: translate3d(0px, 48px, 0px) !important;
+}
+header {
+  background-color: #232f3e !important;
+
+  margin: unset !important;
+  width: unset !important;
+  flex-direction: row !important;
+}
+header > div:nth-child(1) {
+  width: 100%;
+}
+
+header > div:nth-child(1) > button {
+  position: absolute;
+  top: 0;
+}
+
+.swiper:hover > .swiper-button-next {
+  background-color: rgba(255,255,255,.9) !important;
+}
+.swiper:hover > .swiper-button-prev {
+  background-color: rgba(255,255,255,.9) !important;
+}
